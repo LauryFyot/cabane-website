@@ -2,12 +2,12 @@
 RewriteEngine On
 
 # 1. Réécriture des URLs jolies vers les vrais fichiers PHP
-RewriteRule ^acces-cabane-perchee-paris$ pages/acces.php [L]
-RewriteRule ^activites-cabane-insolite$ pages/activities.php [L]
-RewriteRule ^contact-cabane-chambonniere$ pages/contact.php [L]
-RewriteRule ^description-cabane-dans-les-arbres$ pages/description.php [L]
-RewriteRule ^photos-cabane-perchee$ pages/gallery.php [L]
-RewriteRule ^prix-location-cabane-arbres$ pages/prices.php [L]
+RewriteRule ^acces-cabane-perchee-paris$ acces.php [L]
+RewriteRule ^activites-cabane-insolite$ activities.php [L]
+RewriteRule ^contact-cabane-chambonniere$ contact.php [L]
+RewriteRule ^description-cabane-dans-les-arbres$ description.php [L]
+RewriteRule ^photos-cabane-perchee$ gallery.php [L]
+RewriteRule ^prix-location-cabane-arbres$ prices.php [L]
 RewriteRule ^cabane-perchee-de-chambonniere$ index.php [L]
 
 # 2. Redirections 301 depuis les anciennes URLs du vieux site (important pour ne pas perdre le SEO existant)
@@ -15,12 +15,12 @@ Redirect 301 /cabane-perchee-dans-les-arbres-paris-disney-provins-Acces.html /ac
 Redirect 301 /cabane-perchee-paris-disney-provins-album.html /photos-cabane-perchee
 
 # 3. (Facultatif mais recommandé) Rediriger les anciennes URLs .php vers les nouvelles jolies URLs
-Redirect 301 pages/acces.php /acces-cabane-perchee-paris
-Redirect 301 pages/activities.php /activites-cabane-insolite
-Redirect 301 pages/contact.php /contact-cabane-chambonniere
-Redirect 301 pages/description.php /description-cabane-dans-les-arbres
-Redirect 301 pages/gallery.php /photos-cabane-perchee
-Redirect 301 pages/prices.php /prix-location-cabane-arbres
+Redirect 301 acces.php /acces-cabane-perchee-paris
+Redirect 301 activities.php /activites-cabane-insolite
+Redirect 301 contact.php /contact-cabane-chambonniere
+Redirect 301 description.php /description-cabane-dans-les-arbres
+Redirect 301 gallery.php /photos-cabane-perchee
+Redirect 301 prices.php /prix-location-cabane-arbres
 
 # 4. Page 404 personnalisée
 ErrorDocument 404 /404.php
