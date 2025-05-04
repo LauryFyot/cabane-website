@@ -29,9 +29,11 @@
 
                 <!-- Buttons -->
                 <div class="flex gap-6">
-                    <?php $text = "Galerie !"; $link = "gallery";
+                    <?php $text = "Galerie !";
+                    $link = "gallery";
                     include 'components/buttons/button-light-white.php'; ?>
-                    <?php $text = "Réserver !"; $link = "contact";
+                    <?php $text = "Réserver !";
+                    $link = "contact";
                     include 'components/buttons/button-plain-white.php'; ?>
                 </div>
             </div>
@@ -95,4 +97,28 @@
     document.getElementById("arrow-left").addEventListener("click", prevSlide);
 
     window.addEventListener("DOMContentLoaded", updateBackground);
+</script>
+
+<script>
+    $(document).ready(function() {
+        const images = ['assets/img/Cabane dans les arbres.webp', 'assets/img/WE insolite.webp', 'assets/img/3 Acces a la Cabane.webp'];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % images.length;
+            $('#bg-image').fadeIn(500, function() {
+                $(this).css('background-image', `url('${images[index]}')`).fadeIn(500);
+            });
+
+            // Met à jour le texte "01", "02", "03"
+            const slideNumber = document.querySelector('.slide-number');
+            if (slideNumber) {
+                slideNumber.textContent = `0${index + 1}`;
+            }
+
+            // Garde currentSlide cohérent avec le script vanilla JS
+            currentSlide = index;
+        }, 4000);
+
+    });
 </script>
