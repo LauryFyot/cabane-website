@@ -25,15 +25,15 @@ $pageContent = ob_get_clean();
 include 'layout.php';
 ?>
 
-<!-- <script>
+<script>
     $(document).ready(function () {
         const images = ['assets/img/Cabane dans les arbres.webp', 'assets/img/WE insolite.webp', 'assets/img/3 Acces a la Cabane.webp'];
         let index = 0;
         setInterval(() => {
             index = (index + 1) % images.length;
-            $('#bg-image').fadeIn(500, function () {
+            $('#bg-image').fadeIn(400, function () {
                 $(this).css('background-image', `url('${images[index]}')`).fadeIn(500);
             });
         }, 5000);
     });
-</script> -->
+</script>
