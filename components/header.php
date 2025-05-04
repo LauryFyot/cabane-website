@@ -1,5 +1,5 @@
 <!-- Header + Backdrop (screen size) -->
-<header id="bg-image" class="-mt-[70px] h-screen flex flex-col bg-fixed bg-center bg-cover transition-all duration-500 ease-in-out">
+<header id="bg-image" class="-mt-[70px] h-screen flex flex-col bg-center bg-cover transition-all duration-500 ease-in-out md:bg-fixed">
     <div class="h-full w-full backdrop-opacity-10 bg-black/50 z-0 flex flex-col">
 
         <!-- Content -->
