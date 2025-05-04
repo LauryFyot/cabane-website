@@ -2,10 +2,30 @@
 <html lang="en">
 
 <head>
+    <base href="/template_website/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Title -->
     <title><?php echo $pageTitle; ?></title>
+    <!-- Description -->
+    <meta name="description" content="<?= htmlspecialchars($pageDescription ?? "") ?>" />
+    <!-- Keywords -->
+    <meta name="keywords" content="<?= htmlspecialchars($pageKeyWords ?? "") ?>" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/img/logo-cabane.webp" type="image/png">
+
+    <!-- SEO -->
+    <!-- OpenGraph -->
+    <title>Cabane Perchée - Accueil</title>
+    <meta property="og:title" content="Dormez dans une cabane perchée à 1h de Paris" />
+    <meta property="og:description" content="Offrez-vous une nuit magique dans les arbres." />
+    <meta property="og:image" content="http://my.tooty.free.fr/assets/img/cabane.jpg" />
+    <meta property="og:url" content="http://my.tooty.free.fr/" />
+    <meta property="og:type" content="website" />
+    <!-- Canonical -->
+    <link rel="canonical" href="http://my.tooty.free.fr/" />
+
     <!-- Fonts (if needed) -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- JQuery -->
@@ -17,8 +37,6 @@
     <link rel="stylesheet" href="src/output.css" />
     <!-- Flowbite -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <!-- Icon -->
-    <link rel="icon" href="assets/img/logo-cabane.webp" type="image/png">
     <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Daterange -->
