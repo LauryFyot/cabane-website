@@ -20,7 +20,7 @@
             <a href="<?= $routes['gallery'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'gallery') echo 'font-bold'; ?>">Galerie</a>
             <a href="<?= $routes['activities'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'activities') echo 'font-bold'; ?>">Activités</a>
             <a href="<?= $routes['description'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'description') echo 'font-bold'; ?>">Descriptif</a>
-            <a href="<?= $routes['prices'] ?>php" class="text-white block py-2 link link-underline <?php if ($current_page == 'prices') echo 'font-bold'; ?>">Tarifs</a>
+            <a href="<?= $routes['prices'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'prices') echo 'font-bold'; ?>">Tarifs</a>
             <a href="<?= $routes['contact'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'contact') echo 'font-bold'; ?>">Réservation & Accès</a>
         </div>
     </div>
