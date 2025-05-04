@@ -1,3 +1,4 @@
+<?php include 'config/routes.php'; ?>
 <!-- NAVBAR -->
 <nav class="nav py-2 sticky w-full top-0 z-30 flex bg-[<?php echo $colorbase; ?>] justify-center h-[70px]">
     <div class="w-10/12 flex items-center justify-between flex-wrap max-w-[1200px] relative">
@@ -15,12 +16,12 @@
 
         <!-- MENU DESKTOP -->
         <div class="hidden lg:flex flex-row gap-6 text-sm">
-            <a href="index.php" class="text-white block py-2 link link-underline <?php if ($current_page == 'home') echo 'font-bold'; ?>">Home</a>
-            <a href="gallery.php" class="text-white block py-2 link link-underline <?php if ($current_page == 'gallery') echo 'font-bold'; ?>">Galerie</a>
-            <a href="activities.php" class="text-white block py-2 link link-underline <?php if ($current_page == 'activities') echo 'font-bold'; ?>">Activités</a>
-            <a href="description.php" class="text-white block py-2 link link-underline <?php if ($current_page == 'description') echo 'font-bold'; ?>">Descriptif</a>
-            <a href="prices.php" class="text-white block py-2 link link-underline <?php if ($current_page == 'prices') echo 'font-bold'; ?>">Tarifs</a>
-            <a href="contact.php" class="text-white block py-2 link link-underline <?php if ($current_page == 'contact') echo 'font-bold'; ?>">Réservation & Accès</a>
+            <a href="<?= $routes['home'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'home') echo 'font-bold'; ?>">Home</a>
+            <a href="<?= $routes['gallery'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'gallery') echo 'font-bold'; ?>">Galerie</a>
+            <a href="<?= $routes['activities'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'activities') echo 'font-bold'; ?>">Activités</a>
+            <a href="<?= $routes['description'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'description') echo 'font-bold'; ?>">Descriptif</a>
+            <a href="<?= $routes['prices'] ?>php" class="text-white block py-2 link link-underline <?php if ($current_page == 'prices') echo 'font-bold'; ?>">Tarifs</a>
+            <a href="<?= $routes['contact'] ?>" class="text-white block py-2 link link-underline <?php if ($current_page == 'contact') echo 'font-bold'; ?>">Réservation & Accès</a>
         </div>
     </div>
 </nav>
@@ -33,12 +34,12 @@
 
 
     <nav class="flex flex-col items-center gap-6 mt-8">
-        <a href="index.php" class="text-white hover:underline <?php if ($current_page == 'home') echo 'font-bold'; ?>">Home</a>
-        <a href="gallery.php" class="text-white hover:underline <?php if ($current_page == 'gallery') echo 'font-bold'; ?>">Galerie</a>
-        <a href="activities.php" class="text-white hover:underline <?php if ($current_page == 'activities') echo 'font-bold'; ?>">Activités</a>
-        <a href="description.php" class="text-white hover:underline <?php if ($current_page == 'description') echo 'font-bold'; ?>">Descriptif</a>
-        <a href="prices.php" class="text-white hover:underline <?php if ($current_page == 'prices') echo 'font-bold'; ?>">Tarifs</a>
-        <a href="contact.php" class="text-white hover:underline <?php if ($current_page == 'contact') echo 'font-bold'; ?>">Réservation & Accès</a>
+        <a href="<?= $routes['home'] ?>" class="text-white hover:underline <?php if ($current_page == 'home') echo 'font-bold'; ?>">Home</a>
+        <a href="<?= $routes['gallery'] ?>" class="text-white hover:underline <?php if ($current_page == 'gallery') echo 'font-bold'; ?>">Galerie</a>
+        <a href="<?= $routes['activities'] ?>" class="text-white hover:underline <?php if ($current_page == 'activities') echo 'font-bold'; ?>">Activités</a>
+        <a href="<?= $routes['description'] ?>" class="text-white hover:underline <?php if ($current_page == 'description') echo 'font-bold'; ?>">Descriptif</a>
+        <a href="<?= $routes['prices'] ?>" class="text-white hover:underline <?php if ($current_page == 'prices') echo 'font-bold'; ?>">Tarifs</a>
+        <a href="<?= $routes['contact'] ?>" class="text-white hover:underline <?php if ($current_page == 'contact') echo 'font-bold'; ?>">Réservation & Accès</a>
     </nav>
 </div>
 

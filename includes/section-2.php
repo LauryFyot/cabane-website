@@ -24,7 +24,7 @@
                 Un soin particulier a été apporté à la décoration et au confort afin de vous offrir un cadre exceptionnel.
             </p>
 
-            <?php $text = "Réserver !"; $link = "contact.php";
+            <?php $text = "Réserver !"; $link = "contact";
             include 'components/buttons/button-plain-black.php'; ?>
 
             <img src="assets/img/Cabane insolite plusieurs pieces.webp" class="object-cover w-full hidden lg:flex py-6" alt="Weekend insolite detente">

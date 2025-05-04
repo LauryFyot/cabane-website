@@ -58,7 +58,7 @@
                 </div>
             </div>
 
-            <?php $text = "Réserver !"; $link = "contact.php";
+            <?php $text = "Réserver !"; $link = "contact";
             include 'components/buttons/button-plain-black.php'; ?>
         </form>
 

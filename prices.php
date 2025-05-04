@@ -31,7 +31,7 @@ ob_start();
     <div class="mb-10 flex flex-col items-center gap-2">
     <p class="italic text-xs text-center font-semibold uppercase">Parfois une petite pause s'impose !</p>
     <p class="italic text-xs text-gray-500 text-center mb-2">Venez réaliser votre rêve d'enfant<br>et dormir dans les arbres à la cabane perchée de Chambonnière...</p>
-        <?php $text = "Réserver !"; $link = "contact.php";
+        <?php $text = "Réserver !"; $link = "contact";
         include 'components/buttons/button-plain-black.php'; ?>
     </div>
 

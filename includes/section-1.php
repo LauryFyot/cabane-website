@@ -21,7 +21,7 @@
                     </p>
                     <div class="w-1/2 flex flex-col gap-4">
                         <p class="text-sm text-justify">Laissez aller vos sens…touchez, sentez, écoutez le chant des oiseaux et du vent. Avec un peu de chance vous aurez la visite des écureuils. Rêve, imagination et souvenirs… venez vous « cocooner », vous détendre et vous laisser aller.</p>
-                        <?php $text = "Réserver !"; $link = "contact.php";
+                        <?php $text = "Réserver !"; $link = "contact";
                         include 'components/buttons/button-plain-black.php'; ?>
                     </div>
                 </div>

@@ -29,9 +29,9 @@
 
                 <!-- Buttons -->
                 <div class="flex gap-6">
-                    <?php $text = "Galerie !"; $link = "gallery.php";
+                    <?php $text = "Galerie !"; $link = "gallery";
                     include 'components/buttons/button-light-white.php'; ?>
-                    <?php $text = "Réserver !"; $link = "contact.php";
+                    <?php $text = "Réserver !"; $link = "contact";
                     include 'components/buttons/button-plain-white.php'; ?>
                 </div>
             </div>
