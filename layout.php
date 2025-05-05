@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 
 <head>
-    <base href="/template_website/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Title -->
     <title><?php echo $pageTitle; ?></title>
-    <!-- Description -->
-    <meta name="description" content="<?= htmlspecialchars($pageDescription ?? "") ?>" />
-    <!-- Keywords -->
-    <meta name="keywords" content="<?= htmlspecialchars($pageKeyWords ?? "") ?>" />
+    <!-- Description & Keywords -->
+    <meta name="description" content="<?php echo htmlspecialchars(isset($pageDescription) ? $pageDescription : ''); ?>" />
+    <meta name="keywords" content="<?php echo htmlspecialchars(isset($pageKeyWords) ? $pageKeyWords : ''); ?>" />
+
     <!-- Icon -->
     <link rel="icon" href="assets/img/logo-cabane.webp" type="image/png">
 
